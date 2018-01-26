@@ -3,10 +3,10 @@
 import math as ma
 
 #Ask for lower (x1) and upper (x2) limits; print these to screen
-x1 =  raw_input('smallest number to check: ')
+x1 =  input('smallest number to check: ')
 print "Lower Limit:", x1
 
-x2 = raw_input('largest number to check: ')
+x2 = input('largest number to check: ')
 print "Upper Limit:", x2 
 
 print "Primes from", x1, "to", x2, "are:"
