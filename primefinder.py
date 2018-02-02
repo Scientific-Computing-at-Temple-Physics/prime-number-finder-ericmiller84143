@@ -14,9 +14,9 @@ print "Upper Limit:", x2
 print "Primes from", x1, "to", x2, "are:"
 
 for i in range(x1, x2 + 1):  #range over x1, (x1) + 1, (x1) +2, ... , x2
-    if i == 1:              #the number 1 is not prime
-        continue            #if a 1 comes up, skip this iteration and move on
-    for j in range(2, int(ma.sqrt(i))+1)  #check if integers 2 < j < i-1 are factors of i
+    if (i <=1):              #negative numbers and 1 are not prime, don't even bother checking
+        continue            
+    for j in range(2, int(ma.sqrt(i)+1)):  #check if integers 2 < j < sqrt(i) are factors of i
         if i%j==0:                        #if none in that range, there can't be any greater
             break           #break loop if a divisor is found
     else:                   #if i has no divisors, it is prime so print it to the screen
